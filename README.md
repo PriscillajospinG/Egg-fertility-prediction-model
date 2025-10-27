@@ -1,12 +1,12 @@
-# Egg Fertility Prediction Model 🥚
+# Egg Fertility Prediction Model 
 
 A deep learning project using VGG16 transfer learning to classify egg fertility images as **Fertile (FER)** or **Infertile (INF)**.
 
-## 📋 Project Overview
+## Project Overview
 
 This project implements a Convolutional Neural Network (CNN) based on the pre-trained VGG16 architecture to predict egg fertility from images. The model uses transfer learning with ImageNet weights and fine-tuning for binary classification.
 
-## 🗂️ Dataset
+## Dataset
 
 - **Source**: [Kaggle - Egg Fertility Dataset](https://www.kaggle.com/datasets/mostefatabbakh/egg-fertility-1275)
 - **Classes**: 
@@ -54,7 +54,7 @@ This project implements a Convolutional Neural Network (CNN) based on the pre-tr
    path = kagglehub.dataset_download("mostefatabbakh/egg-fertility-1275")
    ```
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 - **Base Model**: VGG16 (pre-trained on ImageNet)
 - **Custom Layers**:
@@ -65,7 +65,7 @@ This project implements a Convolutional Neural Network (CNN) based on the pre-tr
 - **Input Size**: 224x224x3
 - **Output**: Binary classification (FER/INF)
 
-## 📊 Data Augmentation
+##  Data Augmentation
 
 The training data is augmented with:
 - Rotation (±30°)
@@ -75,7 +75,7 @@ The training data is augmented with:
 - Brightness adjustment (0.7-1.3)
 - Horizontal and vertical flips
 
-## 🎯 Training
+##  Training
 
 - **Optimizer**: Adam (learning rate: 1e-4)
 - **Loss Function**: Binary Cross-Entropy
@@ -85,16 +85,16 @@ The training data is augmented with:
 - **Epochs**: Up to 30 (with early stopping)
 - **Batch Size**: 32
 
-## 📈 Results
+##  Results
 
 The model's performance is evaluated on the test set, with accuracy metrics displayed in the notebook. Training history plots show accuracy and loss curves for both training and validation sets.
 
-## 💾 Model Files
+##  Model Files
 
 - `best_model.h5`: Saved model with best validation performance
 - `VGG16.ipynb`: Complete training and prediction notebook
 
-## 🔮 Usage
+##  Usage
 
 ### Training the Model
 
@@ -139,12 +139,6 @@ Egg-fertility-prediction-model/
     └── test/
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest enhancements
-- Submit pull requests
 
 ## 👤 Author
 
